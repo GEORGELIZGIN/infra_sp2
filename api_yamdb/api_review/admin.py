@@ -8,7 +8,7 @@ class ReviewAdmin(admin.ModelAdmin):
     empty_value_display = '-пусто-'
     search_fields = ('title', 'author', 'text')
     list_filter = ('title', 'pub_date')
-    ordering = 'pub_date'
+    ordering = ('pub_date',)
 
 
 @admin.register(Comment)
